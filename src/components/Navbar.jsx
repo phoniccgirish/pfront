@@ -17,7 +17,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY + 200;
-      const sections = navLinks.map((link) => document.querySelector(link.href));
+      const sections = navLinks.map((link) =>
+        document.querySelector(link.href)
+      );
 
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i];
@@ -53,14 +55,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md w-full fixed top-0 left-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          <a href="#home" className="text-2xl font-bold text-gray-900">
-            Girish Yadav
+    <nav className='bg-white/80 backdrop-blur-md w-full fixed top-0 left-0 z-50 shadow-sm'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='flex items-center justify-between h-16'>
+          <a href='#home' className='text-2xl font-bold text-gray-900'>
+            exoticc.girish
           </a>
 
-          <div className="hidden md:flex space-x-8">
+          <div className='hidden md:flex space-x-8'>
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -86,16 +88,16 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+            className='md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100'
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
           </button>
         </div>
       </div>
 
       {isOpen && (
-        <div className="md:hidden border-t border-gray-200 bg-white">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+        <div className='md:hidden border-t border-gray-200 bg-white'>
+          <div className='px-2 pt-2 pb-3 space-y-1'>
             {navLinks.map((link) => (
               <a
                 key={link.name}
