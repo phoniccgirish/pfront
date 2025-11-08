@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section id='about' className='scroll-mt-20 pt-20 md:pt-32'>
-      <div className='max-w-7xl mx-auto px-4 text-center'>
+    <section id='about' className='pt-20 scroll-mt-20 md:pt-32'>
+      <div className='px-4 mx-auto text-center max-w-7xl'>
         <h2 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
           About Me
         </h2>
@@ -12,9 +12,9 @@ const AboutSection = () => {
         </p>
       </div>
 
-      <div className='mt-12 bg-white shadow-xl rounded-lg overflow-hidden max-w-5xl mx-auto p-8 md:p-12'>
+      <div className='max-w-5xl p-8 mx-auto mt-12 overflow-hidden bg-white rounded-lg shadow-xl md:p-12'>
         <h3 className='text-2xl font-bold text-blue-600'>Summary</h3>
-        <p className='mt-4 text-gray-700 text-base leading-relaxed'>
+        <p className='mt-4 text-base leading-relaxed text-gray-700'>
           I am a 3rd-year B.Tech CS_Design student with a strong focus on
           software development and problem-solving. I have hands-on experience
           in programming with Java and web technologies, along with projects in
@@ -22,7 +22,7 @@ const AboutSection = () => {
           knowledge to build practical solutions.
         </p>
 
-        <h3 className='text-2xl font-bold text-blue-600 mt-10'>Education</h3>
+        <h3 className='mt-10 text-2xl font-bold text-blue-600'>Education</h3>
         <ul className='mt-4 space-y-4 text-gray-700'>
           <li>
             <strong className='block text-gray-900'>
@@ -38,6 +38,12 @@ const AboutSection = () => {
               Senior Secondary (Class XII)
             </strong>
             S.V.M Inter College, Gorakhpur (2023)
+          </li>
+          {/* --- This is the new list item you requested --- */}
+          <li>
+            <strong className='block text-gray-900'>Secondary (Class X)</strong>
+            S.D.N.K Inter Collage, Gorakhpur (2021)
+            <span className='block text-sm text-gray-500'>Percentage: 89%</span>
           </li>
         </ul>
       </div>
